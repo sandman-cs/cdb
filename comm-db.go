@@ -11,10 +11,9 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// Try to connect to the DB server as
+// ConnectToDB -- Try to connect to the DB server as
 // long as it takes to establish a connection
-
-func connectToDB(dbServer string, dbUsr string, dbPwd string, dbName string, dbType string) *sql.DB {
+func ConnectToDB(dbServer string, dbUsr string, dbPwd string, dbName string, dbType string) *sql.DB {
 
 	var err error
 	var dB *sql.DB
